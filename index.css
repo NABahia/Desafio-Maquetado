@@ -1,0 +1,613 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* TITULOS y TEXTOS */
+.Title {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.Sub-Title {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.Large-Text-Bold {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.Text-Body {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 16px;
+}
+.Caption {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 13px;
+}
+
+/* AREA DEL WELCOME */
+
+.Welcome {
+  background-image: url("./puntitos.png");
+  background-size: Cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 616px;
+  padding: 18px 18px 0 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 769px) {
+  .Welcome {
+    padding: 36px 80px 0 80px;
+  }
+}
+
+/* AREA DEL HEADER */
+.Header {
+  width: 100%;
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (min-width: 769px) {
+  .Header {
+    width: 100%;
+    height: 145px;
+  }
+}
+
+.Header__Logo {
+  width: 54px;
+  height: 54px;
+}
+
+@media (min-width: 769px) {
+  .Header__Logo {
+    width: 109px;
+    height: 109px;
+  }
+}
+
+/* INTENTO DE MENU */
+.Button-menu {
+  height: 54px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+@media (min-width: 769px) {
+  .Button-menu {
+    display: none;
+  }
+}
+
+.Header__Button-Image {
+  height: 36px;
+  width: 36px;
+}
+
+.menu {
+  display: inline-block;
+  position: relative;
+}
+.menu-content {
+  background-color: #dbdbdb;
+  display: none;
+  position: absolute;
+  width: 200px;
+  overflow: auto;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.4);
+}
+.menu:hover .menu-content {
+  display: block;
+}
+.menu-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+.menu-content a:hover {
+  color: #ffffff;
+  background-color: #00a4bd;
+}
+
+.Header__Link-Container {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .Header__Link-Container {
+    height: 28px;
+    width: 428px;
+    margin: 0 23px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.Header__Link {
+  text-decoration: none;
+}
+.Header__Link:visited {
+  color: inherit;
+}
+
+/* TERMINA INTENTO DE MENU */
+
+.Welcome__Content {
+  width: 100%;
+  height: 544px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 769px) {
+  .Welcome__Content {
+    height: 571px;
+    flex-direction: row;
+  }
+}
+
+.Welcome__Title-Box {
+  height: 244px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@media (min-width: 769px) {
+  .Welcome__Title-Box {
+    height: 471px;
+    padding-top: 115px;
+    align-items: flex-start;
+    justify-content: baseline;
+  }
+}
+
+.Welcome__Title {
+  width: 291px;
+  height: 96px;
+  margin: 0;
+  text-align: center;
+}
+
+@media (min-width: 769px) {
+  .Welcome__Title {
+    text-align: left;
+  }
+}
+
+.Welcome__Image-Box {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 769px) {
+  .Welcome__Image-Box {
+    height: 471px;
+    align-items: flex-end;
+    justify-content: end;
+  }
+}
+
+.Welcome__Image {
+  width: 318px;
+  height: 300px;
+}
+
+@media (min-width: 769px) {
+  .Welcome__Image {
+    width: 100%;
+    height: 100%;
+    max-width: 435px;
+    max-height: 395px;
+  }
+}
+
+/* AREA DEL ABOUT-ME */
+.About-me {
+  width: 100%;
+  height: 538px;
+  padding: 55px 32px 68px 32px;
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 769px) {
+  .About-me {
+    padding-top: 132px;
+    padding-bottom: 169px;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 90px;
+  }
+}
+
+.About-me__Text-Area {
+  max-width: 532px;
+  height: 278px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (min-width: 769px) {
+  .About-me__Text-Area {
+    max-width: 532px;
+    height: 237px;
+    margin: 0;
+    justify-content: center;
+    align-self: flex-end;
+  }
+}
+
+.About-me__Title {
+  max-width: 271px;
+  height: 44px;
+  margin: 0 auto;
+  text-align: center;
+  color: #fafafa;
+}
+
+@media (min-width: 769px) {
+  .About-me__Title {
+    max-width: 271px;
+    height: 44px;
+    margin-left: 5px;
+    margin-bottom: 28px;
+  }
+}
+
+.About-me__Text {
+  margin: 0 auto;
+  height: 193px;
+  color: #fafafa;
+}
+
+@media (min-width: 769px) {
+  .About-me__Text {
+    max-width: 532px;
+    font-size: 24px;
+  }
+}
+
+.About-me__Img {
+  width: 80px;
+  height: 80px;
+}
+
+@media (min-width: 769px) {
+  .About-me__Img {
+    width: 211px;
+    height: 211px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    align-self: flex-start;
+  }
+}
+
+/* AREA DEL SERVICES */
+.Services {
+  width: 100%;
+  height: 1375px;
+  padding: 70px 52px 66px 52px;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 43px;
+}
+
+@media (min-width: 769px) {
+  .Services {
+    width: 100%;
+    height: 604px;
+    padding: 59px 80px 108px 80px;
+    gap: 71px;
+  }
+}
+
+.Services__Title {
+  margin: 0;
+  width: 271px;
+  height: 56px;
+  text-align: center;
+}
+
+@media (min-width: 769px) {
+  .Services__Title {
+    margin: 0;
+    width: 403px;
+    font-size: 48px;
+  }
+}
+
+.Services__Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 271px;
+  height: 100%;
+}
+
+@media (min-width: 769px) {
+  .Services__Content {
+    height: auto;
+    width: 100%;
+    min-width: 500px;
+    max-width: 1279px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.Services__Item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 271px;
+  gap: 15px;
+}
+
+@media (min-width: 769px) {
+  .Services__Item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+    width: 271px;
+    height: 28px;
+    gap: 15px;
+  }
+}
+
+.Services__Images {
+  margin: 0;
+  width: 138px;
+  height: 138px;
+}
+
+.Services__Sub-Title {
+  margin: 0;
+  width: 100%;
+  min-width: 190px;
+  max-width: 271px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.Services__Text {
+  margin: 0;
+  width: 100%;
+  min-width: 190px;
+  max-width: 271px;
+  text-align: center;
+}
+
+/* AREA DEL CONTACT */
+
+.Contact {
+  width: 100%;
+  height: 660px;
+  padding: 70px 20px;
+  background-color: #141414;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 769px) {
+  .Contact {
+    padding-top: 116px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 77px;
+  }
+}
+
+.Contact__Title {
+  color: #fafafa;
+  text-align: center;
+  width: 100%;
+  max-width: 271px;
+  height: 56px;
+  margin-bottom: 36px;
+  margin-top: 0;
+}
+
+@media (min-width: 769px) {
+  .Contact__Title {
+    font-size: 48px;
+  }
+}
+
+.Contact__Form {
+  margin: 0;
+  height: 428px;
+  width: 100%;
+  max-width: 376px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Contact__fieldset {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.Contact__Label-Nombre {
+  color: #fafafa;
+}
+
+.Contact__Input-Nombre {
+  margin: 0;
+  width: 100%;
+  max-width: 376px;
+  height: 45px;
+}
+
+.Contact__Label-Email {
+  color: #fafafa;
+}
+
+.Contact__Input-Email {
+  margin: 0;
+  width: 100%;
+  max-width: 376px;
+  height: 45px;
+}
+
+.Contact__Label-Mensaje {
+  color: #fafafa;
+}
+
+.Contact__Textarea-Mensaje {
+  margin: 0;
+  width: 100%;
+  max-width: 376px;
+  height: 113px;
+}
+
+.Contact__Button-Section {
+  margin-top: 45px;
+  width: 100%;
+  max-width: 376px;
+  height: 45px;
+}
+.Contact__Send-Button {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 16px;
+  background-color: #ffd953;
+}
+
+/* AREA DEL FOOTER */
+
+.Footer {
+  background-image: url("./puntitos.png"); /* Ruta de la imagen */
+  background-size: cover; /* Ajusta la imagen para cubrir toda la sección */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  width: 100%;
+  height: 493px;
+  padding: 53px 20px 0 20px;
+  background-color: #dbdbdb;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+@media (min-width: 769px) {
+  .Footer {
+    padding: 50px;
+    align-items: center;
+  }
+}
+
+.Footer__content {
+  width: 100%;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+@media (min-width: 769px) {
+  .Footer__content {
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    min-width: 500px;
+    max-width: 1279px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+.Footer__Logo-section {
+  width: 120px;
+  height: 110px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+.Footer__logo {
+  width: 77px;
+  height: 77px;
+}
+
+.Footer__logo-text {
+  width: 120px;
+  height: 15px;
+}
+.Footer__Links-section {
+  width: 120px;
+  height: 134px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.Footer__Contenedor-Link {
+  width: 120px;
+  height: 28px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+.Footer__Logo-Link {
+  width: 29px;
+  height: 29px;
+}
+.Footer__Text-Link {
+  width: 80px;
+  height: 29px;
+}

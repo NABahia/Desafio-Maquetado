@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio Maquetado</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <section class="Welcome">
+      <header class="Header">
+        <img src="./Logo.ico" alt="" class="Header__Logo" />
+        <div class="Header__Menu">
+          <div class="menu">
+            <div class="Button-menu">
+              <img src="./burger.png" alt="" class="Header__Button-Image" />
+            </div>
+            <div class="menu-content">
+              <a href="#About-me" class="Sub-Title">Quien Soy</a>
+              <a href="#Services" class="Sub-Title">Servicios</a>
+              <a href="#Contact" class="Sub-Title">Escribime</a>
+            </div>
+          </div>
+          <div class="Large-Text-Bold Header__Link-Container">
+            <a href="#About-me" class="Header__Link">Quien Soy</a>
+            <a href="#Services" class="Header__Link">Servicios</a>
+            <a href="#Contact" class="Header__Link">Escribime</a>
+          </div>
+        </div>
+      </header>
+      <div class="Welcome__Content">
+        <div class="Welcome__Title-Box">
+          <h2 class="Title Welcome__Title">Bienvenidos a mi Site</h2>
+        </div>
+        <div class="Welcome__Image-Box">
+          <img src="./Yo.png" alt="" class="Welcome__Image" />
+        </div>
+      </div>
+    </section>
+    <section class="About-me" id="About-me">
+      <div class="About-me__Text-Area">
+        <h2 class="Sub-Title About-me__Title">Soy Adrian</h2>
+        <p class="Text-Body About-me__Text">
+          Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
+          vehicula velit. Aenean lobortis posuere tristique. Phasellus placerat
+          arcu elementum nisi ultrices cursus. Etiam sit amet aliquet lacus.
+        </p>
+      </div>
+      <img src="./check-1.png" alt="" class="About-me__Img" />
+    </section>
+    <section class="Services" id="Services">
+      <h2 class="Sub-Title Services__Title">Mis Servicios</h2>
+      <div class="Services__Content">
+        <div class="Services__Item">
+          <img src="./desktop-1.png" alt="" class="Services__Images" />
+          <h3 class="Large-Text-Bold Services__Sub-Title">Hago Cosas</h3>
+          <p class="Text-Body Services__Text">
+            Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
+            vehicula velit. Aenean lobortis posuere tristique.
+          </p>
+        </div>
+        <div class="Services__Item">
+          <img src="./desktop-1.png" alt="" class="Services__Images" />
+          <h3 class="Large-Text-Bold Services__Sub-Title">Y Mas Cosas</h3>
+          <p class="Text-Body Services__Text">
+            Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
+            vehicula velit. Aenean lobortis posuere tristique.
+          </p>
+        </div>
+        <div class="Services__Item">
+          <img src="./desktop-1.png" alt="" class="Services__Images" />
+          <h3 class="Large-Text-Bold Services__Sub-Title">Y Otras Cosas</h3>
+          <p class="Text-Body Services__Text">
+            Algo interesante sobre mi Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Nulla dui quam, sollicitudin at enim id, sodales
+            vehicula velit. Aenean lobortis posuere tristique.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="Contact" id="Contact">
+      <h2 class="Sub-Title Contact__Title">Escribime</h2>
+      <div class="Contact__Form">
+        <div class="Contact__fieldset">
+          <label for="Contact__Nombre" class="Caption Contact__Label-Nombre"
+            >NOMBRE</label
+          >
+          <input
+            id="Contact__Nombre"
+            type="text"
+            class="Contact__Input-Nombre"
+          />
+        </div>
+        <div class="Contact__fieldset">
+          <label for="Contact__Email" class="Caption Contact__Label-Email"
+            >EMAIL</label
+          >
+          <input
+            id="Contact__Email"
+            type="email"
+            class="Contact__Input-Email"
+          />
+        </div>
+        <div class="Contact__fieldset">
+          <label for="Contact__Mensaje" class="Caption Contact__Label-Mensaje"
+            >Mensaje</label
+          >
+          <textarea
+            name="Contact__Textarea-Mensaje"
+            id="Contact__Mensaje"
+            class="Contact__Textarea-Mensaje"
+          ></textarea>
+        </div>
+        <div class="Contact__Button-Section">
+          <button class="Contact__Send-Button">Enviar</button>
+        </div>
+      </div>
+    </section>
+    <footer class="Footer">
+      <div class="Footer__content">
+        <div class="Footer__Logo-section">
+          <img src="./Logo.ico" alt="" class="Footer__logo" />
+          <label for="Logo" class="Caption Footer__logo-text"
+            >© 2025 Adrian</label
+          >
+        </div>
+        <div class="Footer__Links-section">
+          <div class="Footer__Contenedor-Link">
+            <img src="./instagram.png" alt="" class="Footer__Logo-Link" />
+            <label for="" class="Text-Body Footer__Text-Link">Instagram</label>
+          </div>
+          <div class="Footer__Contenedor-Link">
+            <img src="./linkedin.png" alt="" class="Footer__Logo-Link" />
+            <label for="" class="Text-Body Footer__Text-Link">Linkedin</label>
+          </div>
+          <div class="Footer__Contenedor-Link">
+            <img src="./github.png" alt="" class="Footer__Logo-Link" />
+            <label for="" class="Text-Body Footer__Text-Link">Github</label>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
